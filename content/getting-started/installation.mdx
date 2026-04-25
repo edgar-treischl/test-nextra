@@ -1,0 +1,87 @@
+---
+title: Installation
+description: Run the example app locally with Yarn.
+---
+
+import { Steps, Tabs } from 'nextra/components'
+import Image from 'next/image'
+import { ImageZoom } from 'nextra/components'
+
+# Installation
+
+Use the existing lockfile and scripts in `package.json`.
+
+<Tabs items={['yarn dev', 'yarn build', 'yarn start']}>
+  <Tabs.Tab>
+
+  Start the development server:
+
+  ```bash
+  yarn dev
+  ```
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+
+  Build the production app:
+
+  ```bash
+  yarn build
+  ```
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+
+  Serve the production build:
+
+  ```bash
+  yarn start
+  ```
+
+  </Tabs.Tab>
+</Tabs>
+
+<Steps>
+## Install dependencies
+
+This example already includes a `yarn.lock`, so stick with Yarn for local development.
+
+## Start the app
+
+Run `yarn dev` and open the local URL printed by Next.js.
+
+## Add content
+
+Create more `.mdx` files under `content/` and they will be picked up by the Nextra page map.
+</Steps>
+
+
+
+ 
+<Image src="/images/demo.png" alt="Hello" width={200} height={300} />
+
+Bla bla
+
+<ImageZoom src="/images/demo.png" />
+
+
+
+> [!NOTE]
+>
+> Useful information that users should know, even when skimming content.
+ 
+> [!TIP]
+>
+> Helpful advice for doing things better or more easily.
+ 
+> [!IMPORTANT]
+>
+> Key information users need to know to achieve their goal.
+ 
+> [!WARNING]
+>
+> Urgent info that needs immediate user attention to avoid problems.
+ 
+> [!CAUTION]
+>
+> Advises about risks or negative outcomes of certain actions.

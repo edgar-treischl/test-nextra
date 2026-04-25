@@ -1,0 +1,33 @@
+---
+title: Writing content
+description: Add new MDX pages and reuse built-in Nextra components.
+---
+
+import { Callout } from 'nextra/components'
+
+# Writing content
+
+Pages in this project are plain `.mdx` files inside `content/`.
+
+## Example checklist
+
+- Add front matter with a `title` and `description`.
+- Use headings to populate the table of contents automatically.
+- Import built-in Nextra components when a page needs richer layout elements.
+
+<Callout>
+  Keep site-wide component overrides in `mdx-components.js` so every page shares the same MDX behavior.
+</Callout>
+
+## Example snippet
+
+```mdx
+---
+title: My page
+description: Short summary for the page.
+---
+
+# My page
+
+Write Markdown first, then add MDX components where they improve the page.
+```

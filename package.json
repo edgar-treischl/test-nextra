@@ -1,0 +1,26 @@
+{
+  "name": "test-nextra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@next/mdx": "^16.2.4",
+    "mdx-components": "^1.0.1",
+    "next": "15",
+    "nextra": "^4.6.1",
+    "nextra-theme-docs": "^4.6.1",
+    "react": "18",
+    "react-dom": "18"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out",
+    "postbuild": "pagefind --site .next/server/app --output-path out/_pagefind"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2",
+    "serve": "^14.2.4",
+    "typescript": "5"
+  }
+}

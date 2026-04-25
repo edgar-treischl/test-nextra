@@ -1,0 +1,51 @@
+---
+title: Example docs home
+description: A small Nextra starter with a working landing page and a few example sections.
+---
+
+import { Callout, Cards } from 'nextra/components'
+
+# Build docs with Nextra
+
+This example project uses **Next.js App Router** with **Nextra 4** and a `content/` directory full of MDX pages.
+
+<Callout type="info">
+  Start the site with `yarn dev`, then open the example pages below to explore the layout, sidebar, and MDX components.
+</Callout>
+
+<Cards>
+  <Cards.Card
+    href="/getting-started"
+    title="Getting started"
+    arrow
+  >
+    Learn the route structure and the basic commands for this example app.
+  </Cards.Card>
+  <Cards.Card
+    href="/getting-started/installation"
+    title="Installation"
+    arrow
+  >
+    Run the app locally and build the production bundle.
+  </Cards.Card>
+  <Cards.Card
+    href="/guides/writing-content"
+    title="Writing content"
+    arrow
+  >
+    See how Markdown, MDX components, and page structure fit together.
+  </Cards.Card>
+  <Cards.Card
+    href="/reference/project-structure"
+    title="Project structure"
+    arrow
+  >
+    A quick walkthrough of the main app, layout, and content files.
+  </Cards.Card>
+</Cards>
+
+## What this example includes
+
+- A working catch-all App Router page for Nextra content.
+- Shared docs layout, navigation, and footer setup in `app/layout.jsx`.
+- Example pages under `content/` that demonstrate headings, lists, callouts, tabs, and steps.
