@@ -6,6 +6,7 @@ description: Run the example app locally with Yarn.
 import { Steps, Tabs } from 'nextra/components'
 import Image from 'next/image'
 import { ImageZoom } from 'nextra/components'
+import { getAssetPath } from '../../../lib/get-asset-path'
 
 # Installation
 
@@ -52,17 +53,17 @@ Run `yarn dev` and open the local URL printed by Next.js.
 
 ## Add content
 
-Create more `.mdx` files under `content/` and they will be picked up by the Nextra page map.
+Create more `.mdx` files under `content/documentation/` and they will be picked up by the docs page map.
 </Steps>
 
 
 
  
-<Image src="/images/demo.png" alt="Hello" width={200} height={300} />
+<Image src={getAssetPath('/images/demo.png')} alt="Hello" width={200} height={300} />
 
 Bla bla
 
-<ImageZoom src="/images/demo.png" />
+<ImageZoom src={getAssetPath('/images/demo.png')} />
 
 
 

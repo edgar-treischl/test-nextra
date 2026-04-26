@@ -1,27 +1,24 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
+import { Footer, Layout } from 'nextra-theme-docs'
+import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { SiteNavbar } from '../components/site-navbar'
 import 'nextra-theme-docs/style.css'
 
 export const metadata = {
   title: {
-    default: 'Nextra Example Docs',
-    template: '%s | Nextra Example Docs'
+    default: 'Aurora Platform',
+    template: '%s | Aurora Platform'
   },
-  description: 'A small Nextra documentation app with example pages and MDX content.'
+  description:
+    'Aurora Platform pairs a marketing homepage, grouped example pages, and a Nextra-powered documentation section.'
 }
 
-const banner = (
-  <Banner storageKey="nextra-example-banner">
-    This example app now uses the supported Nextra 4 App Router pattern.
-  </Banner>
+const footer = (
+  <Footer>
+    {new Date().getFullYear()} © Aurora Platform. Built with Next.js and Nextra for a combined
+    marketing site and documentation hub.
+  </Footer>
 )
-const navbar = (
-  <Navbar
-    logo={<b>Nextra Example</b>}
-  />
-)
-const footer = <Footer>{new Date().getFullYear()} © Nextra Example.</Footer>
 
 export default async function RootLayout({ children }) {
   return (
@@ -33,8 +30,7 @@ export default async function RootLayout({ children }) {
       <Head />
       <body>
         <Layout
-          banner={banner}
-          navbar={navbar}
+          navbar={<SiteNavbar />}
           pageMap={await getPageMap()}
           footer={footer}
           editLink={null}

@@ -1,0 +1,38 @@
+---
+title: Project structure
+description: The main files that make this website and docs app work.
+---
+
+# Project structure
+
+## `next.config.mjs`
+
+Registers the Nextra plugin with Next.js.
+
+## `app/layout.jsx`
+
+Defines the shared site shell: navbar, footer, head tags, and the root page map.
+
+## `app/documentation/layout.jsx`
+
+Scopes the docs page map to `/documentation` so the sidebar stays focused on documentation pages.
+
+## `app/documentation/[[...mdxPath]]/page.jsx`
+
+Loads MDX pages from `content/documentation/`, generates metadata, and renders them through the docs theme wrapper.
+
+## `app/page.jsx`
+
+Renders the marketing landing page and hero section at the site root.
+
+## `app/examples/*`
+
+Contains the extra example pages linked from the grouped navbar menu.
+
+## `mdx-components.js`
+
+Merges the docs theme MDX components with any project-level overrides.
+
+## `content/documentation/`
+
+Holds the documentation pages that power the `/documentation` section.

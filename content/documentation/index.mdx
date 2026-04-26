@@ -1,0 +1,51 @@
+---
+title: Documentation overview
+description: Start here for the Aurora Platform docs, setup steps, and project structure.
+---
+
+import { Callout, Cards } from 'nextra/components'
+
+# Documentation overview
+
+The documentation lives under `/documentation` and is powered by **Next.js App Router** with **Nextra 4**.
+
+<Callout type="info">
+  Use the landing page for product messaging, then send readers here for setup steps, guides, and implementation details.
+</Callout>
+
+<Cards>
+  <Cards.Card
+    href="/documentation/getting-started"
+    title="Getting started"
+    arrow
+  >
+    Learn the route structure and the core commands for this site.
+  </Cards.Card>
+  <Cards.Card
+    href="/documentation/getting-started/installation"
+    title="Installation"
+    arrow
+  >
+    Run the app locally and build the production export.
+  </Cards.Card>
+  <Cards.Card
+    href="/documentation/guides/writing-content"
+    title="Writing content"
+    arrow
+  >
+    See how Markdown, MDX components, and page structure fit together.
+  </Cards.Card>
+  <Cards.Card
+    href="/documentation/reference/project-structure"
+    title="Project structure"
+    arrow
+  >
+    Review the main app, layout, and content files.
+  </Cards.Card>
+</Cards>
+
+## What this site includes
+
+- A landing page at `/` for product messaging and calls to action.
+- Shared navigation with documentation, grouped examples, and GitHub access.
+- MDX documentation pages under `content/documentation/`.
